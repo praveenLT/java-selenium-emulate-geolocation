@@ -16,7 +16,7 @@
 
 Option 1: To set geolocation, you can utilise the 'geolocation' capability like so:
 ```Java
-   ltOptions.put("geolocation", "US");
+   ltOptions.put("geoLocation", "US");
 ```
 Option 2: To set geolocation, you can use `devTools` and `Emulation.setGeolocationOverride` like so:
 
