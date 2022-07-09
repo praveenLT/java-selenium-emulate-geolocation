@@ -12,7 +12,22 @@
     ```
      install maven
     ```
-    
+### Setting geolocation
+
+Option 1: To set geolocation, you can utilise the 'geolocation' capability like so:
+```Java
+   ltOptions.put("geolocation", "US");
+```
+Option 2: To set geolocation, you can use `devTools` and `Emulation.setGeolocationOverride` like so:
+
+```java
+        // setGeolocationOverride() takes input lattitude, longitude and accuracy as
+        // parameters.
+        devTools.send(Emulation.setGeolocationOverride(Optional.of(28.622409),
+                Optional.of(77.364925),
+                Optional.of(1)));
+```
+
 ### Run your First Test
 1. Clone the Java-Selenium-Sample repository. 
 ```
